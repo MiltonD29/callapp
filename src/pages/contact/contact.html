@@ -1,17 +1,24 @@
 <ion-header>
   <ion-navbar>
-    <ion-title>
-      Contact
+    <ion-title text-center>
+      Contacto
     </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content>
-  <ion-list>
-    <ion-list-header>Follow us on Twitter</ion-list-header>
-    <ion-item>
-      <ion-icon name="ionic" item-start></ion-icon>
-      @ionicframework
-    </ion-item>
-  </ion-list>
+<ion-content padding>
+
 </ion-content>
+
+<ion-footer>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <button ion-button full color="secondary" (click)="call()">Llamar</button>
+      </ion-col>
+      <ion-col>
+        <button ion-button full (click)="mensaje()">SMS</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-footer>
